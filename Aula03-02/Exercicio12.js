@@ -1,0 +1,16 @@
+const prompt = require('prompt-sync')();
+
+let peso = Number(prompt('Digite seu peso em kg: '));
+let altura = Number(prompt('Digite sua altura em metros: '));
+
+let imc = peso / (altura * altura);
+
+if (imc < 18.5) {
+    console.log('Abaixo do peso');
+} else if (imc >= 18.5 && imc < 25) {
+    console.log('Peso normal');
+} else if (imc >= 25 && imc < 30) {
+    console.log('Sobrepeso');
+} else if (imc >= 30 && imc < 35) {
+    console.log('Obesidade');
+}

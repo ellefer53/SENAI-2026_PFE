@@ -1,0 +1,77 @@
+:root {
+    --cor-fundo-pagina: rgb(0, 0, 23);
+    --cor-fundo-cartao: #111827;
+    --cor-texto-principal: #e5e7eb;
+    --cor-texto-suave: #9ca3af;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cor-texto-principal);
+    background: var(--cor-fundo-pagina);
+
+}
+
+.container-pagina {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    
+}
+
+.cabecalho-principal {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, #0ea5e9 0%, rgb(0, 0, 47) 60%);
+    padding: clamp(2rem, 5vw, 5rem);
+
+}
+
+.cabecalho-principal__titulo {
+    font-size: 3.2rem;
+    margin-bottom: 0 0 5rem;
+}
+
+.cabecalho-principal__subtitulo {
+    font-size: 1.2rem;
+    color: var(--cor-texto-suave)
+}
+
+.formulario-inscricao {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.formulario-inscricao__campo-email {
+    border: 2px solid;
+    padding-left: 15px;
+    border-color: rgba(8, 0, 120, 0.364);
+    color: white;
+    width: 40%;
+    height: 50px;
+    border-radius: 100px;
+    background-color: var(--cor-fundo-cartao);
+}
+
+.formulario-inscricao__botao {
+    margin-left: 15px;
+    text-align: left;
+    font-weight: bold;
+    border: 3px gray;
+    color: black;
+    padding: 15px 15px;
+    border-radius: 100px;
+    background-color: rgb(0, 255, 0);
+}
+
+.garantia {
+    color: var(--cor-texto-suave)
+}
